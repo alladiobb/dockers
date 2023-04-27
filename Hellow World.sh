@@ -5,6 +5,6 @@ docker run hellow-world
 
 #se ele executar e não aparecer quando você digitar comando:
 docker ps
-#tente
+#tente - ele irá mostrar o histórico - containers que executaram mais morreram em algum momento
 docker ps -a
-#ele irá mostrar o histórico
+
