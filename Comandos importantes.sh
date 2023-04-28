@@ -2,6 +2,9 @@
 #e poder rodar outros comandos
 docker run -d 
 
+#Pprar Docker
+docker stop {CONTAINER ID / NAME} 
+
 #remover
 docker rm {CONTAINER ID/NAMES}
 
@@ -20,3 +23,8 @@ docker exec -it nginx bash
 #executar o vim no nginx
 apt-get update
 apt-get install vim
+
+#NGINX
+/use/share/nginx/html/
+
+
