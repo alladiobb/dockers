@@ -11,3 +11,5 @@ docker -rmi "nginx"
 #criando imagem
 #User o arquivo 06 como exemplo
 
+#comando para criar a imagem
+docker build -t alladio .
