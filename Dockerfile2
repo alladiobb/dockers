@@ -5,4 +5,4 @@ RUN apt-get update
 RUN apt-get install vim -y
 
 
-COPY /usr/share/nginx
+COPY /usr/share/nginx .
