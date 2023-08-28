@@ -1,3 +1,6 @@
+#na shell dentro da pasta do DOCKERFILE
+docker build -t alladio/nginx-com-vim:latest .
+
 #verificar as imagens que você tem no docker:
 docker images
 
