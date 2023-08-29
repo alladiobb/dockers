@@ -1,0 +1,10 @@
+Bridge - 
+
+Host - O container e a maquina entram na mesma rede diretamente, sem exposição de porta.
+
+Overlay - Qaundo se tem vários dockers em maquinas(Computadores) diferentes e precisamos fazer com que eles se comuniquem
+Docker Swarm - Cria um cluster de vários docker, para escalar a aplicação, com várias maquinas.
+
+Maclan - Toda maquina tem um MACADDRESS
+
+None- container de forma isolada
