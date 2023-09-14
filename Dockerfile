@@ -9,8 +9,12 @@
 
 FROM nginx:latest
 
-COPY html/ /usr/share/nginx/html
+WORKDIR /app
+RUN apt-get update && \
+	apt-get install nano -y
+	
+COPY html/ /usr/share/nginx
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["nginx", "-g", "daemon off;"]
+#ENTRYPOINT ["/docker-entrypoint.sh"]
+#CMD ["nginx", "-g", "daemon off;"]
 
