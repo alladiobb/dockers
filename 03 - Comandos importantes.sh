@@ -11,6 +11,9 @@ docker rm {CONTAINER ID/NAMES}
 #remover forçando "-f"
 docker rm {CONTAINER ID/NAMES} -f
 
+#Parar todos os dockers recursivamente
+docker rm -f $(docker ps -aq)
+
 #colocar nome do container
 docker run --name nginx -d -p 8080:80 nginx
 
