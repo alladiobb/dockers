@@ -1,6 +1,9 @@
 #dethatcher "-d" para o terminal não ficar preso
 #e poder rodar outros comandos
-docker run -d 
+docker run -d
+
+#rodando o docker gerado, dando o nome para ele agregando uma porta 
+docker run --rm -d --name [nome que vou dar] -p 8000:8000 [nome do container criado]
 
 #Pprar Docker
 docker stop {CONTAINER ID / NAME} 
