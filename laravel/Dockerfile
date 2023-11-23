@@ -13,7 +13,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 
 RUN php composer.phar create-project --prefer-dist laravel/laravel laravel
 
-FROM php:7.4-fpm-alpine
+FROM php:8.2-fpm-alpine
 WORKDIR /var/www
 RUN rm -rf /var/www/html
 COPY --from=biulder /var/www/laravel .
