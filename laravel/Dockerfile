@@ -13,4 +13,4 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"  &
 
 RUN php composer.phar create-project --prefer-dist laravel/laravel laravel
 
-ENTRYPOINT ["php", "lavarel/artisan","serve"]
+ENTRYPOINT ["php", "laravel/artisan","serve"]
