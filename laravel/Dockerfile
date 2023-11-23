@@ -15,3 +15,5 @@ RUN php composer.phar create-project --prefer-dist laravel/laravel laravel
 
 ENTRYPOINT ["php", "laravel/artisan","serve"]
 CMD ["--host=0.0.0.0"]
+
+#docker run --rm -d --name php1 -p 8001:8001 php --host=0.0.0.0 --port=8001
