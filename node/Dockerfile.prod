@@ -1,0 +1,11 @@
+FROM node:latest
+WORKDIR /usr/src/app
+COPY . .
+CMD ["node","index.js"]
+
+FROM node:latest
+WORKDIR /usr/src/app
+COPY --from=dockernodex /usr/src/app .
+RUN chown -R www-data:www-data /usr/src/app
+EXPOSE 3000
+CMD [""]
