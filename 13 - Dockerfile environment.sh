@@ -4,7 +4,7 @@
 
 #criando container docker com node para usar ele como ambiente de dev
 
-docker run --rm -it -v $(pwd)/:/usr/src/app -p 3000:3000 node:latest bash7
+docker run --rm -it -v $(pwd)/:/usr/src/app -p 3000:3000 node:latest bash
 
 #faz toda instalação do node necessaria
 apt-get update
