@@ -20,3 +20,4 @@ node index.js
 #AGORA SAIMOS DA IMAGEM E RODAMOS CRIAMOS O DOCKERFILE: que está dentro da pasta node/Dockerfile
 
 docker build -t nodex .
+docker run -p 3000:3000 nodex
