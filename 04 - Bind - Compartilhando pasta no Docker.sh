@@ -1,7 +1,9 @@
-#comando introdutório para rodar um pasta local dentro do Docker
+#comando introdutório para rodar um pasta local do HOST dentro do Docker
+#criadno a pasta
 docker run -d --name nginx -p 8080:80 -v /Users/alladiobonesso/Documents/Projetos/html:/usr/share/nginx/html nginx
 
 #comando mais explicito para roda a pasta
+#quando a pasta já existe
 docker run -d --name nginx -p 8080:80 --mount type=bind,source="$(pwd)"/html,target=/usr/share/nginx/html nginx
 
 
