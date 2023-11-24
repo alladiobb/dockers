@@ -11,3 +11,4 @@ apt-get update
 npm install express --save
 npm init
 #edita o HTML -> html.js
+#atentar arquivo na pasta /node no projeto
