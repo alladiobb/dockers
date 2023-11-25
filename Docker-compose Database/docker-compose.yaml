@@ -1,0 +1,21 @@
+version: '3'
+
+  service:
+    db:
+      image: mysql:5.7
+      command: --innodb-use-native-aio=0
+      containername: db
+      restart: always
+      tty: true
+      volumes:
+        - ./mysql:/var/lib/mysql
+      enviroment:
+        - MYSQL_DATABASE=nodedb
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_USER=root
+      networks:
+        - node-network
+
+  networks:
+    laranet:
+      driver: bridge
