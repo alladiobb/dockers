@@ -3,11 +3,14 @@ version: '3'
 services:
 
     laravel:
+        build:
+            context: ./laravel
+            dockerfile: Dockerfile.prod
+            
         image: alladio/laravel
         container_name: laravel
         network:
             - laranet
-
 
     nginx:
         image: alladio/nginx:prod
