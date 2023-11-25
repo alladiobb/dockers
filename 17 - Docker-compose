@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+    laravel:
+        image: alladio/laravel
+        container_name: laravel
+        network:
+            - laranet
+
+
+    nginx:
+        image: alladio/nginx:prod
+        container_name: nginx
+        network:
+            - laranet
+        ports:
+            -"8080:80"
+            
