@@ -11,7 +11,7 @@ docker images
 #remover imagens 
 docker -rmi "nginx"
 
-#criando imagem
+#criando imagem.
 #User o arquivo 06 como exemplo
 
 #comando para criar a imagem
