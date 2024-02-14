@@ -1,5 +1,5 @@
 #verificar os commandos de volumes
-docker volume COMMAND
+docker volume [COMMAND]
 
 #criando volume
 docker volume create novovolume
