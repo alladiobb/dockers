@@ -3,5 +3,5 @@
 # https://docs.docker.com/engine/install/ubuntu/
 
 
-#Para iniciar o serviço caso o mesmo não inicie automaticamente:
+#Para iniciar o serviço caso o mesmo não inicie automaticamente com boot do linux:
 sudo service docker start
