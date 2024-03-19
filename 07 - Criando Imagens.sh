@@ -10,6 +10,7 @@ docker images
 
 #remover imagens 
 docker -rmi "nginx"
+docker rmi $(docker images -q)
 
 #criando imagem.
 #User o arquivo 06 como exemplo
