@@ -1,0 +1,3 @@
+Em resumo, ENTRYPOINT define o comando principal a ser executado, enquanto CMD fornece argumentos padrão para esse comando.
+Se ENTRYPOINT não estiver definido, CMD será o comando principal. 
+Se ENTRYPOINT estiver definido, CMD será os argumentos padrão para esse comando.
