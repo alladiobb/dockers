@@ -22,8 +22,11 @@ docker rm {CONTAINER ID/NAMES} -f
 #Parar todos os dockers recursivamente
 docker rm -f $(docker ps -aq)
 
-#colocar nome do container
-docker run --name nginx -d -p 8080:80 nginx
+#colocar nome do container e as portas
+docker run --name nginx -p 8080:80 nginx
+
+#Rodar o docker e liberar o terminal
+-d
 
 #executar comando no container
 docker exec nginx ls/bash
